@@ -1,22 +1,13 @@
 // console.log("yo")
 
-//Interacting with the DOM
-
-//changing our h1
-let h1Tag = document.querySelector('h1')
-console.log("This is h1Tag ->", h1Tag)
-
-//changing text content
-h1Tag.textContent = "Ellie - The Cutest Dog Ever"
+fetch('https://covers.openlibrary.org/b/isbn/0385472579-S.jpg')
+.then(response => response.json())
+.then(book => {
+    console.log(book)
 
 
-//logic section
-let variableOne = 1;
-console.log(variableOne)
 
-variableOne = "one";
-console.log(variableOne)
 
-function changeAVariable(){
 
-}
+
+});
